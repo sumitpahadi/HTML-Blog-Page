@@ -48,12 +48,12 @@
       <br />
       <li>E is good. Congratulations!</li>
     </ol>
-    <p>
+    <p><b>
       In this example we drew a picture of a tree. The tree is an abstract model
       of the possible sequences of choices we could make. There is also a data
       structure called a tree, but usually we don't have a data structure to
       tell us what choices we have. (If we do have an actual tree data
-      structure, backtracking on it is called depth-first tree searching.)
+      structure, backtracking on it is called depth-first tree searching.)</b>
     </p>
     <hr>
     <h3>The backtracking algorithm.</h3>
@@ -69,13 +69,13 @@
               return false
              } 
             }</pre>
-    <p>
+    <p><b>
       Notice that the algorithm is expressed as a boolean function. This is
       essential to understanding the algorithm. If solve(n) is true, that means
       node n is part of a solution--that is, node n is one of the nodes on a
       path from the root to some goal node. We say that n is solvable. If
       solve(n) is false, then there is no path that includes n to any goal node.
-    </p>
+    </b></p>
     <h3>How does this work?</h3>
     
     <ul>
@@ -551,7 +551,7 @@
       <td><img src="./black-ball.png" alt="white-ball"></td>
   </tr>
 </table>
-<p>The black marbles can only move to the right, and the white marbles can only move to the left (no backing up). At each move, a marble can either:</p>
+<p><b>The black marbles can only move to the right, and the white marbles can only move to the left (no backing up). At each move, a marble can either:</b></p>
 <ul><li>Move one space ahead, if that space is clear, or</li>
     <li>Jump ahead over exactly one marble of the opposite color, if the space just beyond that marble is clear.</li></ul>
     <p>For example, you could make the following sequence of moves:</p>
@@ -721,6 +721,6 @@
   <br>
   <font color="blue"><i>1.</i></font><b> BLACK BLACK BLACK WHITE  ___ WHITE WHITE</b>
 </p>
-<p>Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order.</p>
+<p><p>Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order.</p></p>
 </body>
 </html>
